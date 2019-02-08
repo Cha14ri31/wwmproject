@@ -4,15 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="140dp"
+        android:text="Application Sudoku"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="24dp"
+        android:text="Valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RESET" />
+
+    <Button
+        android:id="@+id/effacer"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="Effacer"
+        app:layout_constraintEnd_toStartOf="@+id/RESET"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <Button
+        android:id="@+id/RESET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:text="enregistrer"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/effacer" />
+
+    <EditText
+        android:id="@+id/EMAIL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:singleLine="false"
+        android:text="MAIL"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <EditText
+        android:id="@+id/mot_de_passe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="PASSWORD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/connection_annuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Annulé"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <Button
+        android:id="@+id/connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="251dp" />
+
 
 </android.support.constraint.ConstraintLayout>
