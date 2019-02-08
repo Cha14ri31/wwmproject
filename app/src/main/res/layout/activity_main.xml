@@ -37,22 +37,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="32dp"
-        android:text="Effacer"
+        android:layout_marginBottom="8dp"
+        android:text="@string/effacer"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/RESET"
         app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="659dp" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="32dp" />
 
     <Button
         android:id="@+id/RESET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="24dp"
         android:text="enregistrer"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/effacer" />
+        app:layout_constraintBottom_toBottomOf="@+id/effacer"
+        app:layout_constraintTop_toTopOf="@+id/effacer"
+        tools:layout_editor_absoluteX="160dp" />
 
     <EditText
         android:id="@+id/EMAIL"
