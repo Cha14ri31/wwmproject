@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">wwmproject</string>
     <string name="effacer">Effacer</string>
+    <string name="valider">Valider</string>
+    <string name="enregistrer">enregistrer</string>
+    <string name="connection">connection</string>
+    <string name="annulé">annuler</string>
+    <string name="app_sudoku">app-sudoku</string>
+    <string name="password">password</string>
+    <string name="mail">mail</string>
 </resources>
